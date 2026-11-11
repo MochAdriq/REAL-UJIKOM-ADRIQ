@@ -1,0 +1,16 @@
+{
+  "name": "ujikom-crud-siswa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aplikasi CRUD Manajemen Data Siswa (Backend Express + MySQL & Frontend React Vite)",
+  "scripts": {
+    "dev": "concurrently -n BE,FE -c blue,green \"npm --prefix be run dev\" \"npm --prefix fe run dev\"",
+    "dev:be": "npm --prefix be run dev",
+    "dev:fe": "npm --prefix fe run dev",
+    "start": "npm --prefix be start",
+    "build": "npm --prefix fe run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  }
+}
